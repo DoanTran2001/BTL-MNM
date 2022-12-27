@@ -4,7 +4,7 @@ import React from 'react'
 
 function MainLayout({ children }) {
   return (
-    <div className=''>
+    <div className='bg-[#eff0f3]'>
       <Header />
       {children}
       <Footer />

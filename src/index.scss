@@ -1,8 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    // background-image: linear-gradient(to bottom, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-image: linear-gradient(to bottom, #1e9600, #fff200, #ff0000);
+    border-radius: 100rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 100rem;
+  }
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.text-dots {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// .swiper {
+//   width: 240px;
+//   height: 320px;
+// }
+
+// .swiper-slide {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 18px;
+//   font-size: 22px;
+//   font-weight: bold;
+//   color: #fff;
+// }
+
+.swiperThumb .swiper-slide {
+  opacity: 0.4;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.swiperThumb .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 5px solid red;
 }
